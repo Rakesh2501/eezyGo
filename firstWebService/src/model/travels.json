@@ -1,0 +1,19 @@
+[
+    {
+        "travelAgencyName":"VRL",
+        "busNo":"MH12-KQ-1234",
+        "source":"Pune",
+        "Destination":"Udupi",
+        "fare":3500,
+        "seats":44,
+        "customers":[101]
+    },
+    {
+        "travelAgencyName":"SRS",
+        "busNo":"KA51-KQ-1948",
+        "source":"Pune",
+        "Destination":"Bangalore",
+        "seats":44,
+        "fare":2200
+    }
+]

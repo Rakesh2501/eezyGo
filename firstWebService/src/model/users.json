@@ -1,0 +1,53 @@
+[
+    {
+        "custId":101,
+        "email":"rakesh.prabhu@gmail.com",
+        "password":"qwerty",
+        "firstName":"Rakesh",
+        "lastName":"Prabhu",
+        "age":23,
+        "address":"Pune",
+        "bookings":[
+            {
+                "bId": 1001,
+                "travelAgencyName":"VRL",
+                "busNo":"MH12-KQ-1234",
+                "source":"Pune",
+                "Destination":"Udupi",
+                "boardingDate":"2020-05-21",
+                "noOfSeats":2,
+                "totalCost":7000,
+                "passengerDetails":[
+                    {
+                        "name":"Rakesh Prabhu",
+                        "age":23
+                    },
+                    {
+                        "name":"Ramesh Prabhu",
+                        "age":55
+                    }
+                ]
+            },
+            {
+                "bId": 1002,
+                "travelAgencyName":"SRS",
+                "busNo":"KA51-KQ-1948",
+                "source":"Pune",
+                "Destination":"Bangalore",
+                "boardingDate":"2020-01-15",
+                "noOfSeats":1,
+                "totalCost":2200,
+                "passengerDetails":[
+                    {
+                        "name":"Vaishali Prabhu",
+                        "age":47
+                    }
+                ]
+            }
+        ]
+    }
+]
+
+
+
+

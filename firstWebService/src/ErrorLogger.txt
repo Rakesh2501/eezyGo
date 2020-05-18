@@ -1,0 +1,295 @@
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - SyntaxError: Unexpected token e in JSON at position 2
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token e in JSON at position 3
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token ' in JSON at position 3
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token ' in JSON at position 9
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token ' in JSON at position 9
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token ' in JSON at position 9
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token ' in JSON at position 9
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token ' in JSON at position 9
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - SyntaxError: Unexpected token ' in JSON at position 9
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Mar 01 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Mar 02 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Tue Mar 03 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Tue Mar 03 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Wed Mar 04 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Wed Mar 04 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:67:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Thu Mar 05 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri Mar 06 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri Mar 06 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri Mar 06 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri Mar 06 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
