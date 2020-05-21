@@ -76,7 +76,7 @@ class Login extends React.Component{
                     <div className='container' >
                         <div className='row '>
                             <div className='col-lg-12 col-md-12 |sm-12' style={{borderWidth:3,borderColor:'black'}}>
-                                    <div className='card' style={{position:'absolute',right:'1%',width:350,marginTop:'5%',background:'rgba(255, 255, 250,0.4)'}}>
+                                    <div className='card' style={{position:'absolute',right:'1%',width:350,marginTop:'5%',background:'rgba(255, 255, 250,0.6)'}}>
                                         <div className='text-center' style={{margin:10}}>
                                             <h6 className='display-4' style={{color:'black'}}>Sign Up</h6>
                                         </div>
