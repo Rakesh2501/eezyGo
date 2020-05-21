@@ -14,7 +14,8 @@ class Register extends React.Component{
                 lname:'',
                 email:'',
                 age:null,
-                address:''
+                address:'',
+                password:''
             }
         }
     }
@@ -51,6 +52,9 @@ class Register extends React.Component{
                                 </div>
                                 <div className='form-group'>
                                     <TextField label='Address' name='address' onChange={(e)=>this.handleChange(e)} value={this.state.formValues.address} autoComplete='off' color='primary' fullWidth={true}/> 
+                                </div>
+                                <div className='form-group'>
+                                    <TextField type='password' label='Password' name='password' onChange={(e)=>this.handleChange(e)} value={this.state.formValues.password} autoComplete='off' color='primary' fullWidth={true}/> 
                                 </div>
                                 <div className='text-center'>
                                     <Button variant='contained' color='primary' type='submit'>SUBMIT</Button>
