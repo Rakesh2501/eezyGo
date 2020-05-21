@@ -4,23 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from 'react-redux'
 import {loginStatus} from '../actions/actions'
 import axios from 'axios'
-import loginPageImage from '../img/homepage1.jpg'
-import '../index.css'
-import {MDBBtn,MDBInput,MDBCard,MDBModal,MDBModalBody,MDBModalHeader,MDBModalFooter, MDBIcon, MDBBadge, MDBContainer, MDBRow, MDBCol} from 'mdbreact'
+// import {MDBBtn,MDBInput,MDBCard,MDBModal,MDBModalBody,MDBModalHeader,MDBModalFooter, MDBIcon, MDBBadge, MDBContainer, MDBRow, MDBCol} from 'mdbreact'
 import {TextField,InputLabel,Button} from  '@material-ui/core'
-import {makeStyles,ThemeProvider} from '@material-ui/core/styles'
+import {makeStyles,ThemeProvider,createMuiTheme,withStyles} from '@material-ui/core/styles'
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
 const url = 'http://localhost:2000/'
 
 
-// const useStylesBase = makeStyles({
-//     root: {
-//       color: 'blue', 
-//     },
-//   });
-
 class Login extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={
             formValue:{
                 email:'',
@@ -67,8 +61,8 @@ class Login extends React.Component{
 
 
     render(){
-        
-        // const classesBase = useStylesBase();
+
+        const {classes} = this.props 
 
         if(this.state.successMsg){
             return(<Redirect to={'/home'} />)
@@ -79,26 +73,27 @@ class Login extends React.Component{
         
         return(
             <React.Fragment>
-                    <div className='container'>
-                        <div className='row justify-content-center' >
-                            <div className='col-md-6 |sm-12'>
-                                    <div className='card-transparent' style={{marginTop:100}}>
-                                        <div className={'card-body'}>
+                    <div className='container' >
+                        <div className='row '>
+                            <div className='col-lg-4 col-md-6 |sm-12' style={{borderWidth:3,borderColor:'black'}}>
+                                    <div className='card' style={{position:'absolute',left:750,width:350,marginTop:100,background:'rgba(255, 255, 250,0.4)'}}>
+                                        <div className='text-center' style={{margin:10}}>
+                                            <h6 className='display-4' style={{color:'black'}}>Sign Up</h6>
+                                        </div>
+                                        <div className={'card-body'} >
                                             <form onSubmit={this.handleSubmit} >
                                                 <div className='form-group'>
-                                                    
-                                                    {/* <input type='text' name='email' onChange={this.handleChange} value={this.state.formValue.email} className='form-control' /> */}
-                                                    <TextField autoFocus autoComplete="off"  label='Email:' name='email' onChange={this.handleChange} value={this.state.formValue.email}/>
-                                                   
-                                                    {/* <MDBInput label='Email:'/> */}
+                                            
+                                                    <TextField color="primary" size='small' fullWidth={true} autoFocus autoComplete="off"  label='Email:' name='email' onChange={this.handleChange} value={this.state.formValue.email}/>
+                                                    {/* <input type='text' className='form-control'/> */}
                                                 </div>
-                                                <div className='form-group'>
-                                                    
-                                                    <TextField autoComplete="off"  label='Password:' name='password' onChange={this.handleChange} value={this.state.formValue.password}/>                                            </div>
-                                                <div>
-                                                    {/* <button type='submit' className='btn btn-primary'>Login</button> */}
-                                                    <Button variant='outlined' color='secondary' type='submit'>Login</Button>
+                                                <div className='form-group'>  
+                                                    <TextField  color="primary" fullWidth={true} autoComplete="off"  label='Password:' name='password' onChange={this.handleChange} value={this.state.formValue.password}/>         
+                                                </div>
+                                                <div style={{textAlign:'center'}}>
+                                                    <Button variant='contained' color='primary' type='submit'>Login</Button>
                                                     <br/>
+                                
                                                     <p className='text-danger'>{this.state.errorMsg!=''?this.state.errorMsg:''}</p>
                                                 </div>
                                             </form>
@@ -128,4 +123,7 @@ const mapDispatchToProps={
 
 }
 
+
 export default connect(mapStateToProps,mapDispatchToProps)(Login)
+
+

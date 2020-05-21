@@ -5,11 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('B:/mern/eezyGo/front-end-application/src/img/homepage2.jpg');
+  background-image: url('B:/mern/eezyGo/front-end-application/src/img/homepage3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
   
 }
 
@@ -22,14 +21,7 @@ code {
 .nav-trans{
  
   background-color: transparent;
-  box-shadow: 1.5px 1.5px 50px;
+  box-shadow: 1.5px 1.5px 10px;
 
-}
-
-.card{
-  /* background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%); */
-  background-color: rgb(245, 245, 245);
-  opacity: .4;
-  
 }
 
