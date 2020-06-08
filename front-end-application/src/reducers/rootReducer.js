@@ -1,6 +1,7 @@
  let initialState =  {
     loggedIn:false,
-    isSignInClicked:false
+    isSignInClicked:false,
+    userDetails:{}
  }
 
  const rootReducer = (state=initialState,action)=>{
@@ -11,12 +12,12 @@
                 loggedIn:action.status
             }
             break
-        // case '':
-        //     return{
-        //         ...state,
-        //         isSignInClicked:action.status
-        //     }
-        // break
+        case 'GET_USER_DETAILS':
+            return{
+                ...state,
+                userDetails:action.userDetails
+            }
+            break
         default:
             return state
     }

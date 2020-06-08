@@ -2,8 +2,10 @@ import React from 'react'
 import {Link,Redirect} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {Paper, Grid,TextField, Button} from '@material-ui/core'
+import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const url = 'http://localhost:2000/'
 
 class Register extends React.Component{
     constructor(props){
@@ -25,7 +27,9 @@ class Register extends React.Component{
                 address:'',
                 password:''
             },
-            formError:''
+            formError:'',
+            formMsg:''
+
         }
     }
 
@@ -83,7 +87,7 @@ class Register extends React.Component{
                 errMsgs.password='Required Field'
                 this.setState({errMsgs:errMsgs})
             }else{
-                errMsgs.lname=''
+                errMsgs.password=''
                 this.setState({errMsgs:errMsgs})
             }
         }
@@ -128,6 +132,15 @@ class Register extends React.Component{
         }
         else{
             this.setState({formError:''})
+            axios.post(url+'register',formValues)
+                 .then((response)=>{
+                    if(response.data.message=='success'){
+                        this.setState({formMsg:'Successfully registered. Please Login to continue'})
+                    }
+                 })
+                 .catch((err)=>{
+                    this.setState({formError:'Some Error Occurred'})
+                 })
         }
 
     }
@@ -138,8 +151,9 @@ class Register extends React.Component{
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-12' style={{right:'1%',margin:'2%'}}>
-                        <div className='card' style={{position:'absolute',right:'1%',backgroundColor:'rgba(255,255,250,0.6)',width:400}}>
+                        <div className='card' style={{position:'absolute',right:'1%',backgroundColor:'rgba(255,255,250,0.7)',width:400}}>
                             <h5 className='display-4 text-center'>Registration</h5>
+                            <p className='text-center text-success'>{this.state.formMsg}</p>
                             <div className='card-body'>
                                 <form onSubmit={this.handleSubmit}>
                                     <div className='form-group'>

@@ -31,9 +31,6 @@ class Navbar extends React.Component{
 
 
     render=()=>{
-
-
-        console.log(this.props);
         
         return(this.props.loggedIn?
             (
@@ -90,9 +87,6 @@ class Navbar extends React.Component{
                                 <ul className='navbar-nav'>
                                     <li className='nav-item'>
                                         <Link className='nav-link text-body'>Home</Link>
-                                    </li>
-                                    <li className='nav-item'>
-                                        <Link className='nav-link text-body'>Get Bookings</Link>
                                     </li>
                                     <li className='nav-item'>
                                         <Link className='nav-link text-body'>About</Link>

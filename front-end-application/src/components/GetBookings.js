@@ -5,15 +5,19 @@ import {connect} from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from '../components/Navbar'
 class GetBookings extends React.Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
+        
+    }
+
+    componentDidMount=()=>{
         
     }
 
     render(){
         return(
             <React.Fragment>
-                <h1>shbkh</h1>
+
             </React.Fragment>
         )
     }

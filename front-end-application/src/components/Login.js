@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router,Link,Switch,Redirect} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { connect } from 'react-redux'
-import {loginStatus} from '../actions/actions'
+import {loginStatus,getUserDetails} from '../actions/actions'
 import axios from 'axios'
 // import {MDBBtn,MDBInput,MDBCard,MDBModal,MDBModalBody,MDBModalHeader,MDBModalFooter, MDBIcon, MDBBadge, MDBContainer, MDBRow, MDBCol} from 'mdbreact'
 import {TextField,InputLabel,Button} from  '@material-ui/core'
@@ -43,10 +43,14 @@ class Login extends React.Component{
         const {formValue} = this.state
         axios.post(url+'login',formValue)
             .then((response)=>{
-                this.setState({successMsg:response.data.message,errorMsg:''})
-                this.props.changeLoginStatus(true)
-                localStorage.setItem('loggedIn',true)
-                localStorage.setItem('emailId',formValue.email)
+                if(response){                          
+                    this.props.getUserDetails(response.data)
+                    this.setState({loginSuccess:!this.state.loginSuccess,errorMsg:''})
+                    this.props.changeLoginStatus(true)
+                    localStorage.setItem('loggedIn',true)
+                    localStorage.setItem('emailId',formValue.email)
+                }
+
             })
             .catch((err)=>{
                 if(err.response){
@@ -64,7 +68,7 @@ class Login extends React.Component{
 
         const {classes} = this.props 
 
-        if(this.state.successMsg){
+        if(this.state.loginSuccess){
             return(<Redirect to={'/home'} />)
         }
         if(this.state.errorMsg){
@@ -76,7 +80,7 @@ class Login extends React.Component{
                     <div className='container' >
                         <div className='row '>
                             <div className='col-lg-12 col-md-12 |sm-12' style={{borderWidth:3,borderColor:'black'}}>
-                                    <div className='card' style={{position:'absolute',right:'1%',width:350,marginTop:'5%',background:'rgba(255, 255, 250,0.6)'}}>
+                                    <div className='card' style={{position:'absolute',right:'1%',width:350,marginTop:'5%',background:'rgba(255, 255, 250,0.7)'}}>
                                         <div className='text-center' style={{margin:10}}>
                                             <h6 className='display-4' style={{color:'black'}}>Sign Up</h6>
                                         </div>
@@ -120,7 +124,7 @@ const mapStateToProps=(state)=>{
 
 const mapDispatchToProps={
     changeLoginStatus:loginStatus,
-
+    getUserDetails:getUserDetails
 }
 
 

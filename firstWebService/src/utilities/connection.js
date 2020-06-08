@@ -13,9 +13,12 @@ const booking = {
     "busNo":String,
     "source":String,
     "Destination":String,
-    "boardingDate":Date,
+    "boardingDate":String,
+    "boardingTime":String,
     "noOfSeats":Number,
     "totalCost":Number,
+    "class":String,
+    "journeyHours":Number,
     "passengerDetails":[passengerDetails]
 }
 
@@ -39,7 +42,11 @@ const travel = {
     "Destination":String,
     "fare":Number,
     "seats":Number,
-    "customers":[]
+    "customers":[],
+    "boardingDate":String,
+    "boardingTime":String,
+    "class":String,
+    "journeyHours":Number
 }
 
 let userSchema = mongoose.Schema(user,{collection:'usersCollection',timestamps:true});

@@ -6,14 +6,22 @@
         "Destination":"Udupi",
         "fare":3500,
         "seats":44,
-        "customers":[101]
+        "customers":[101],
+        "boardingDate":"05/27/2020",
+        "boardingTime":"16:00",
+        "class":"Diamond",
+        "journeyHours":12
     },
     {
         "travelAgencyName":"SRS",
         "busNo":"KA51-KQ-1948",
         "source":"Pune",
-        "Destination":"Bangalore",
+        "Destination":"Udupi",
         "seats":44,
-        "fare":2200
+        "fare":2200,
+        "boardingDate":"05/27/2020",
+        "boardingTime":"17:00",
+        "class":"Gold",
+        "journeyHours":13
     }
 ]

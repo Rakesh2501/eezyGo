@@ -50,7 +50,7 @@ model.addUser = (userObj)=>{
             userObj.custId = id
             return coll.create(userObj).then((data)=>{
                 if(data){
-                    return data
+                    return 'success'
                 }
             })
         })
@@ -62,7 +62,12 @@ model.validateLogin = (email,passsword) =>{
         return coll.findOne({email:email}).then((data)=>{
             if(data){
                 if(data.password==passsword){
-                    return true
+                    // return true
+                    return model.getUserByEmail(email).then((data)=>{
+                        if(data){
+                            return data
+                        }
+                    })
                 }else{
                     let err = new Error("Invalid password")
                     err.status=404

@@ -33,4 +33,14 @@ model.getTravels = (name,src,dest)=>{
     })
 }
 
+model.getTravelsByLocationAndDate=(src,dest,date)=>{
+    return collection.getTravelsCollection().then((coll)=>{
+        return coll.find({source:src,Destination:dest,boardingDate:date}).then((data)=>{
+            if(data.length>0){
+                return data
+            }
+        })
+    })
+}
+
 module.exports=model

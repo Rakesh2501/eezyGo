@@ -429,3 +429,105 @@ Thu May 21 2020 - Error: Invalid password
 Thu May 21 2020 - Error: Invalid Email Id
     at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Could not find the user with email undefined
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:87:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Could not find the user with email undefined
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:87:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Fri May 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Tue May 26 2020 - SyntaxError: Unexpected token s in JSON at position 2
+    at JSON.parse (<anonymous>)
+    at parse (B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\types\json.js:89:19)
+    at B:\mern\eezyGo\firstWebService\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:224:16)
+    at done (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (B:\mern\eezyGo\firstWebService\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:215:7)
+    at endReadableNT (_stream_readable.js:1184:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Tue May 26 2020 - TypeError: service.gettravelsByLocationAndDate is not a function
+    at B:\mern\eezyGo\firstWebService\src\routes\travelRouting.js:17:20
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:335:12)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:174:3)
+    at router (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:317:13)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:335:12)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:275:10)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:635:15
+Tue May 26 2020 - TypeError: service.gettravelsByLocationAndDate is not a function
+    at B:\mern\eezyGo\firstWebService\src\routes\travelRouting.js:17:20
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:335:12)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:174:3)
+    at router (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:317:13)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:335:12)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:275:10)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:635:15
+Tue May 26 2020 - TypeError: service.gettravelsByLocationAndDate is not a function
+    at B:\mern\eezyGo\firstWebService\src\routes\travelRouting.js:17:20
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:335:12)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:174:3)
+    at router (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:317:13)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:335:12)
+    at next (B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:275:10)
+    at B:\mern\eezyGo\firstWebService\node_modules\express\lib\router\index.js:635:15
+Mon Jun 08 2020 - Error: Could not connect to database
+    at B:\mern\eezyGo\firstWebService\src\utilities\connection.js:63:21
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Jun 08 2020 - Error: Could not connect to database
+    at B:\mern\eezyGo\firstWebService\src\utilities\connection.js:63:21
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)

@@ -30,7 +30,7 @@ service.addUser=(userObj)=>{
 service.validateLogin=(email,password)=>{
     return dbLayer.validateLogin(email,password).then((response)=>{
         if(response){
-            return true
+            return response
         }
     })
 }

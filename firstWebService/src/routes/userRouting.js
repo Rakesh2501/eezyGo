@@ -26,7 +26,7 @@ router.post("/login",(req,res,next)=>{
     let password = req.body.password;
     return service.validateLogin(email,password).then((response)=>{
         if(response){
-            res.json({message:"Successfully logged in"})
+            res.json(response)
         }
     }).catch((err)=>{
         next(err)
@@ -37,8 +37,8 @@ router.post("/register",(req,res,next)=>{
     let userObj = {
         "email":req.body.email,
         "password":req.body.password,
-        "firstName":req.body.firstName,
-        "lastName":req.body.lastName,
+        "firstName":req.body.fname,
+        "lastName":req.body.lname,
         "age":req.body.age,
         "address":req.body.address,
         "bookings":[]
@@ -46,7 +46,7 @@ router.post("/register",(req,res,next)=>{
 
     return service.addUser(userObj).then((data)=>{
         if(data){
-            res.json(data)
+            res.json({message:data})
         }
     }).catch((err)=>{
         next(err)
@@ -54,7 +54,7 @@ router.post("/register",(req,res,next)=>{
     
 })
 
-router.post("/getUserByEmail",(req,res,next)=>{
+router.get("/getUserByEmail",(req,res,next)=>{
     return service.getUserByEmail(req.body.email).then((data)=>{
         if(data){
             res.json(data)

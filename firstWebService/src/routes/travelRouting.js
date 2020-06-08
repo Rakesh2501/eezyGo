@@ -11,4 +11,10 @@ router.get("/setupTravelsDb",(req,res,next)=>{
     })
 })
 
+router.post("/getTravelsByLocationAndDate",(req,res,next)=>{  
+    return service.getTravelsByLocationAndDate(req.body.src,req.body.dest,req.body.date).then((data)=>{
+        res.json(data)
+    })
+})
+
 module.exports=router
