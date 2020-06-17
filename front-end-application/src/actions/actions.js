@@ -12,6 +12,12 @@ export const getUserDetails=(userDetails)=>{
     }
 }
 
+
+
+
+
+
+
 // export const isSigninClicked=(status)=>{
 //     return{
 //         type:'IS_SIGNIN_CLICKED',

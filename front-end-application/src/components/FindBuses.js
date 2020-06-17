@@ -6,15 +6,22 @@ import {TextField,Button} from '@material-ui/core'
 class FindBuses extends React.Component{
     constructor(props){
         super(props)
-
+        this.state={
+            clicked:false
+        }
     }
 
     componentDidMount=()=>{
         console.log(this.props.history.location.state);
-        
+    }
+
+    showDetailsClicked=(obj)=>{
+        this.setState({clicked:!this.state.clicked})    
+        this.props.history.push('/busDetails',obj)
     }
 
     render=()=>{
+
         return(
             <React.Fragment>
                 <div className='container-fluid'>
@@ -59,7 +66,7 @@ class FindBuses extends React.Component{
 
                                         <div className='flex-container' style={{justifyContent:'center',display:'flex',flexDirection:'row',textAlign:'center',height:'30%',padding:10,borderTop:'1px solid gray'}}>
                                             <div style={{margin:'5px'}}>
-                                                <Button variant='contained' size='small' color='primary'>Show Details</Button>
+                                                <Button variant='contained' size='small' color='primary' onClick={(e)=>this.showDetailsClicked(obj)} >Show Details</Button>
                                             </div>
                                         </div>
                       

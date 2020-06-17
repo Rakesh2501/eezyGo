@@ -19,7 +19,7 @@ const booking = {
     "totalCost":Number,
     "class":String,
     "journeyHours":Number,
-    "passengerDetails":[passengerDetails]
+    "passengerDetails":[passengerDetails],
 }
 
 const user = {
@@ -33,7 +33,12 @@ const user = {
     "bookings":[booking]
 }
 
-
+const seatingArrangement = {
+    "seatRow":Number,
+    "seatNo":Number,
+    "availabilityStatus":Boolean,
+    "isSelected":Boolean
+}
 
 const travel = {
     "travelAgencyName":String,
@@ -46,8 +51,11 @@ const travel = {
     "boardingDate":String,
     "boardingTime":String,
     "class":String,
-    "journeyHours":Number
+    "journeyHours":Number,
+    "seatAvailability":[seatingArrangement]
 }
+
+
 
 let userSchema = mongoose.Schema(user,{collection:'usersCollection',timestamps:true});
 let travelSchema = mongoose.Schema(travel,{collection:'travelsCollection', timestamps:true})

@@ -531,3 +531,11 @@ Mon Jun 08 2020 - Error: Could not connect to database
 Mon Jun 08 2020 - Error: Could not connect to database
     at B:\mern\eezyGo\firstWebService\src\utilities\connection.js:63:21
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Jun 14 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Jun 14 2020 - Error: Invalid password
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:72:31
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)

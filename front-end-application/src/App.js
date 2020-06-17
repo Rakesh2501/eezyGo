@@ -8,7 +8,10 @@ import Home from './components/Home';
 import Navbar from './components/Navbar'
 import GetBookings from './components/GetBookings'
 import Register from './components/Register';
-import FindBuses from './components/FindBuses'
+import FindBuses from './components/FindBuses';
+import BusDetails from './components/BusDetails';
+import Booking from './components/Booking';
+import Billing from './components/Billing'
 
 class App extends React.Component{
     constructor(props){
@@ -28,6 +31,9 @@ class App extends React.Component{
                     <Route path='/register' component={Register} />     
                     <Route path='/getBookings' component={GetBookings}></Route>     
                     <Route path='/findBuses' component={FindBuses}/>
+                    <Route path='/busDetails' component={BusDetails} />
+                    <Route path='/booking' component={Booking}/>
+                    <Route path='/billing' component={Billing}/>
                 </Switch>
               </Router>
           </div>
