@@ -46,10 +46,18 @@ class Login extends React.Component{
                 if(response){             
                                  
                     this.props.getUserDetails(response.data)
-                    this.setState({loginSuccess:!this.state.loginSuccess,errorMsg:''})
                     this.props.changeLoginStatus(true)
                     localStorage.setItem('loggedIn',true)
                     localStorage.setItem('emailId',formValue.email)
+                    
+                    axios.get(url+'getUserByEmail/'+localStorage.getItem('emailId'))
+                         .then((res)=>{
+                            console.log(res);
+                            this.props.getUserDetails(res)
+                            localStorage.setItem('custId',res.data.custId)
+                    })
+
+                    this.setState({loginSuccess:!this.state.loginSuccess,errorMsg:''})
                 }
 
             })

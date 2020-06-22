@@ -54,8 +54,8 @@ router.post("/register",(req,res,next)=>{
     
 })
 
-router.get("/getUserByEmail",(req,res,next)=>{
-    return service.getUserByEmail(req.body.email).then((data)=>{
+router.get("/getUserByEmail/:email",(req,res,next)=>{
+    return service.getUserByEmail(req.params.email).then((data)=>{
         if(data){
             res.json(data)
         }

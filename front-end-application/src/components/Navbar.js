@@ -24,9 +24,10 @@ class Navbar extends React.Component{
     handleLogout=()=>{
         localStorage.setItem('loggedIn',false)
         localStorage.setItem('emailId','')
+        localStorage.setItem('custId','')
         this.props.changeLoginStatus(false)
         this.setState({logoutClicked:true})      
-        // this.props.history.push('/login')  
+
     }
 
 

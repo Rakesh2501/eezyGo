@@ -43,7 +43,7 @@ class Billing extends React.Component{
             passengerDetails : details.passengers,
             seatsSelected : seatsSelected
         }
-        Axios.put(url+'addBookings/'+'101',obj)
+        Axios.put(url+'addBookings/'+localStorage.getItem('custId'),obj)
             .then((response)=>{
                 if(response){
                     this.props.history.push('/bookingSuccess')

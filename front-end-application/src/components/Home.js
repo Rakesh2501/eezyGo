@@ -20,10 +20,13 @@ class Home extends React.Component{
             src:'',
             dest:''
         }
+
+        
+
     }
 
     componentDidMount=()=>{
-
+    
     }
 
     setDate=(date)=>{
@@ -48,6 +51,7 @@ class Home extends React.Component{
     
     render(){
         console.log(this.props.userDetails);
+
         
         return(
             <React.Fragment>

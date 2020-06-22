@@ -13,12 +13,11 @@ class GetBookings extends React.Component{
             bookings:[],
             isClicked:false
         }
-        console.log(this.props.userDetails);
                
     }
-    // this.props.userDetails.custId
+
     componentDidMount=()=>{
-        axios.get(url+'getBookings/'+ 101)
+        axios.get(url+'getBookings/'+ localStorage.getItem('custId'))
              .then((response)=>{
                 this.setState({bookings:response.data})
              })
