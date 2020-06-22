@@ -16,6 +16,7 @@
             }
             break
         case 'GET_USER_DETAILS':
+            
             return{
                 ...state,
                 userDetails:action.userDetails
@@ -85,10 +86,6 @@
             }
 
             break
-        
-        // case 'CHANGE_SEAT_SELECTION':
-
-            
             
         default:
             return state

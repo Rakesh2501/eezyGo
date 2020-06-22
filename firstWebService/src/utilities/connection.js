@@ -3,8 +3,10 @@ mongoose.Promise = global.Promise;
 mongoose.set("useCreateIndex", true)
 
 const passengerDetails={
-    "name":String,
-    "age":Number
+    "pName":String,
+    "age":Number,
+    "contact":String,
+    "gender":String
 }
 
 const booking = {
@@ -46,13 +48,13 @@ const travel = {
     "source":String,
     "Destination":String,
     "fare":Number,
-    "seats":Number,
-    "customers":[],
+    "seats":Number, // ^
+    "customers":[], //
     "boardingDate":String,
     "boardingTime":String,
     "class":String,
     "journeyHours":Number,
-    "seatAvailability":[seatingArrangement]
+    "seatAvailability":[seatingArrangement] //
 }
 
 

@@ -11,7 +11,8 @@ import Register from './components/Register';
 import FindBuses from './components/FindBuses';
 import BusDetails from './components/BusDetails';
 import Booking from './components/Booking';
-import Billing from './components/Billing'
+import Billing from './components/Billing';
+import BookingSuccess from './components/BookingSuccess'
 
 class App extends React.Component{
     constructor(props){
@@ -34,6 +35,7 @@ class App extends React.Component{
                     <Route path='/busDetails' component={BusDetails} />
                     <Route path='/booking' component={Booking}/>
                     <Route path='/billing' component={Billing}/>
+                    <Route path='/bookingSuccess' component={BookingSuccess}/>
                 </Switch>
               </Router>
           </div>

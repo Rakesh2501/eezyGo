@@ -539,3 +539,154 @@ Sun Jun 14 2020 - Error: Invalid password
     at B:\mern\eezyGo\firstWebService\src\model\users.js:72:31
     at runMicrotasks (<anonymous>)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sat Jun 20 2020 - Error
+    at B:\mern\eezyGo\firstWebService\src\model\travels.js:30:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sat Jun 20 2020 - Error
+    at B:\mern\eezyGo\firstWebService\src\model\travels.js:30:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sat Jun 20 2020 - Error
+    at B:\mern\eezyGo\firstWebService\src\model\travels.js:30:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sat Jun 20 2020 - Error
+    at B:\mern\eezyGo\firstWebService\src\model\travels.js:30:23
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Jun 21 2020 - Error: Could not book. Some error occured
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:165:43
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Sun Jun 21 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Jun 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - Error: Invalid Email Id
+    at B:\mern\eezyGo\firstWebService\src\model\users.js:77:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)
+Mon Jun 22 2020 - CastError: Cast to number failed for value "undefined" at path "custId" for model "usersCollection"
+    at new CastError (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\error\cast.js:39:11)
+    at SchemaNumber.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:384:11)
+    at SchemaNumber.SchemaType.applySetters (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1010:12)
+    at SchemaNumber.SchemaType._castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1424:15)
+    at SchemaNumber.castForQuery (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schema\number.js:436:14)
+    at SchemaNumber.SchemaType.castForQueryWrapper (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\schematype.js:1393:15)
+    at cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\cast.js:315:32)
+    at model.Query.Query.cast (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:4684:12)
+    at model.Query.Query._castConditions (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1862:10)
+    at model.Query.<anonymous> (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\query.js:1889:8)
+    at model.Query._wrappedThunk [as _find] (B:\mern\eezyGo\firstWebService\node_modules\mongoose\lib\helpers\query\wrapThunk.js:16:8)
+    at B:\mern\eezyGo\firstWebService\node_modules\kareem\index.js:369:33
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)

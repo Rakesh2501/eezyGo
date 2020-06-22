@@ -38,13 +38,13 @@ class Navbar extends React.Component{
                         <Link className='navbar-brand'><span style={{color:'black'}}>eezyGo</span></Link>
                         <ul  className='navbar-nav'>
                             <li className='nav-item'>
-                                <Link className='nav-link text-body'>Home</Link>
+                                <Link className='nav-link text-body' to={'/'}>Home</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link className='nav-link text-body'>Get Bookings</Link>
+                                <Link className='nav-link text-body' to={'/getBookings'}>Get Bookings</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link className='nav-link text-body'>About</Link>
+                                <Link className='nav-link text-body' >About</Link>
                             </li>
                         </ul>
                         <ul className='navbar-nav ml-auto'>
@@ -64,10 +64,10 @@ class Navbar extends React.Component{
                                 <Link className='navbar-brand text-body'>eezyGo</Link>
                                 <ul className='navbar-nav'>
                                     <li className='nav-item'>
-                                        <Link className='nav-link text-body'>Home</Link>
+                                        <Link className='nav-link text-body' to={'/'}>Home</Link>
                                     </li>
                                     <li className='nav-item'>
-                                        <Link className='nav-link text-body'>Get Bookings</Link>
+                                        <Link className='nav-link text-body' to={'/getBookings'}>Get Bookings</Link>
                                     </li>
                                     <li className='nav-item'>
                                         <Link className='nav-link text-body'>About</Link>

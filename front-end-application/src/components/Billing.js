@@ -1,19 +1,55 @@
 import React from 'react'
 import {Link,Redirect} from 'react-router-dom'
 import { Button } from '@material-ui/core'
+import { connect } from 'react-redux'
+import {getUserDetails} from '../actions/actions'
+import Axios from 'axios'
 
+const url = 'http://localhost:2000/'
 
 class Billing extends React.Component{
     constructor(props){
         super(props)
         this.state={
             details :  this.props.history.location.state,
-            passengersBtn:false
+            passengersBtn:false,
+            
         }
     }
 
     showPassengers=()=>{
         this.setState({passengersBtn:!this.state.passengersBtn})
+    }
+
+    onBook=()=>{
+        let {details} = this.state
+        let seatsSelected =[]
+
+        details.seatsSelected.map((seat)=>{
+            seatsSelected.push(seat.seatNo)
+        })
+        
+        
+        let obj = {
+            travelAgencyName:details.data.travelAgencyName,
+            busNo : details.data.busNo,
+            source : details.data.source,
+            Destination : details.data.Destination,
+            boardingDate : details.data.boardingDate,
+            boardingTime : details.data.boardingTime,
+            noOfSeats : details.noOfPassengers,
+            class : details.data.class,
+            journeyHours:details.data.journeyHours,
+            passengerDetails : details.passengers,
+            seatsSelected : seatsSelected
+        }
+        Axios.put(url+'addBookings/'+'101',obj)
+            .then((response)=>{
+                if(response){
+                    this.props.history.push('/bookingSuccess')
+                }
+            })
+        
     }
 
     render=()=>{
@@ -111,7 +147,7 @@ class Billing extends React.Component{
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
                                             <p style={{ fontSize: '20px' }}>Fare</p>
-                                            <p>{this.state.details.data.fare}</p>
+                                            <p>	&#8377; {this.state.details.data.fare}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
                                             <p style={{ fontSize: '20px' }}>Passengers</p>
@@ -128,7 +164,7 @@ class Billing extends React.Component{
                                             <Button color="primary" size="small" variant="contained" onClick={this.showPassengers}>Show Passengers Details</Button>
                                         </div>
                                         <div>
-                                            <Button color="primary" size="small" variant="contained">Book</Button>
+                                            <Button color="primary" size="small" variant="contained" onClick={this.onBook}>Book</Button>
                                         </div>
                                     </div>
 
@@ -146,4 +182,13 @@ class Billing extends React.Component{
     }
 }
 
-export default Billing
+const mapStateToProps=(state)=>{
+    return{
+        userDetails:state.userDetails
+    }
+}
+const mapDispatchToProps={
+    getUserDetails:getUserDetails
+
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Billing)

@@ -80,9 +80,16 @@ router.put("/addBookings/:custId",(req,res,next)=>{
         source:req.body.source,
         Destination:req.body.Destination,
         boardingDate:new Date(req.body.boardingDate),
-        noOfSeats:req.body.noOfSeats
+        boardingTime:req.body.boardingTime,
+        noOfSeats:req.body.noOfSeats,
+        busNo:req.body.busNo,
+        class:req.body.class,
+        journeyHours:req.body.journeyHours,
+        passengerDetails:req.body.passengerDetails,
+        seatsSelected : req.body.seatsSelected
     }
-
+    console.log(obj);
+    
     return service.addBooking(req.params.custId,obj).then((data)=>{
         if(data){
             res.json({message:"Booking successful"})

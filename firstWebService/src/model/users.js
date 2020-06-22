@@ -125,18 +125,47 @@ model.getBookingById=(bId)=>{
     })
 }
 
+model.addBookingToTravelsCollection=(obj)=>{
+    return collection.getTravelsCollection().then((coll)=>{
+        return coll.updateOne({busNo:obj.busNo},{$inc:{seats:-obj.noOfSeats}}).then((res1)=>{
+            if(res1.nModified>0){
+                let flag = 0
+                let seatsSuccessfullyUpdated =[];
+                obj.seatsSelected.map((seatNo,i)=>{
+                    coll.update({busNo:obj.busNo,"seatAvailability.seatNo":seatNo},{$set:{"seatAvailability.$.availabilityStatus":false}}).then((res2)=>{
+                        if(res2.nModified<1){
+                            flag=1
+                        }else{
+                            seatsSuccessfullyUpdated.push(seatNo)
+                        }
+                    })
+                })
+                if(flag==0){
+                    return true
+                }else{
+                    // write logic to set all the updated seats' availabilityStatus to false and then throw error in .then() block
+                    
+                }
+            }
+        })
+    })
+}
+
 model.addBooking=(custId,obj)=>{
 
     return collection.getUsersCollection().then((userColl)=>{
         return model.generateBookingId().then((bId)=>{
             obj.bId = bId
+            console.log(obj);
+            
             return userColl.updateOne({custId:custId},{$push:{bookings:obj}}, { runValidators: true }).then((data)=>{
                 if(data.nModified>0){
                     return collection.getTravelsCollection().then((travelsColl)=>{
-                        return travelsColl.updateOne({busNo:obj.busNo},{$inc:{seats:-obj.noOfSeats}}).then((data2)=>{
-                            if(data2.nModified>0){
+                        return model.addBookingToTravelsCollection(obj).then((res)=>{
+                            if(res == true){
                                 return true
-                            }else{
+                            }
+                            else {
                                 let err = new Error("Could not book. Some error occured")
                                 throw err
                             }

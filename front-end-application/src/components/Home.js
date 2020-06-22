@@ -47,7 +47,8 @@ class Home extends React.Component{
     }
     
     render(){
-
+        console.log(this.props.userDetails);
+        
         return(
             <React.Fragment>
                 <div className='container'>
