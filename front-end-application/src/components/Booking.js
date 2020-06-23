@@ -215,46 +215,46 @@ class Booking extends React.Component{
                 <div className='container-fluid' style={{marginTop:'20px'}}>
                     <div className='row'>
                         <div className='col-md-8'>
-                            <div className='card' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 15, borderRadius: 25 }}>
+                            <div className='card responsive-text' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 15, borderRadius: 25 }}>
                                 <h4 className='display-4 text-center'>Book Tickets</h4>
                                 <div className='card-body'>
                                     <div style={{display:'flex',flexDirection:'row',borderBottom:'1px solid gray',padding:'10px'}}>
                                         <div style={{width:'17%',textAlign:'center'}}>
-                                            <p style={{fontSize:'20px'}}>Bus</p>
+                                            <p style={{}}>Bus</p>
                                             <p>{this.state.data.travelAgencyName}</p>
                                         </div>
                                         <div style={{width:'17%',borderLeft:'1px solid gray',textAlign:'center'}}>
-                                            <p style={{fontSize:'20px'}}>Class</p>
+                                            <p style={{}}>Class</p>
                                             <p>{this.state.data.class}</p>
                                         </div>
                                         <div style={{width:'17%',borderLeft:'1px solid gray',textAlign:'center'}}>
-                                            <p style={{fontSize:'20px'}}>Departure</p>
+                                            <p style={{}}>Departure</p>
                                             <p>{this.state.data.boardingTime}</p>
                                         </div>
                                         <div style={{width:'17%',borderLeft:'1px solid gray',textAlign:'center'}}>
-                                            <p style={{fontSize:'20px'}}>Journey Time</p>
+                                            <p style={{}}>Journey</p>
                                             <p>{this.state.data.journeyHours} hrs</p>
                                         </div>
                                         <div style={{width:'17%',borderLeft:'1px solid gray',textAlign:'center'}}>
-                                            <p style={{fontSize:'20px'}}>Fare</p>
+                                            <p style={{}}>Fare</p>
                                             <p>	&#8377; {this.state.data.fare}</p>
                                         </div>
                                         <div style={{width:'17%',borderLeft:'1px solid gray',textAlign:'center'}}>
-                                            <p style={{fontSize:'20px'}}>Passengers</p>
+                                            <p style={{}}>Passengers</p>
                                             <p>{this.state.noOfPassengers}</p>
                                         </div>
                                     </div>
                                     <div style={{marginTop:'5px'}}>
-                                        <p style={{fontSize:'20px',textAlign:'center'}}>Add Passengers</p>
+                                        <p style={{textAlign:'center'}}>Add Passengers</p>
                                         <form style={{ display: 'flex', flexDirection: 'row' }}>
                                             <div className='form-group' >
-                                                <TextField style={{marginRight:'3px'}} onChange={this.handlePassengerForm} value={this.state.tempForm.pName} type='text' label='Passenger Name' name='pName' autoComplete='off' color='primary' />
+                                                <TextField style={{marginRight:'3px'}} onChange={this.handlePassengerForm} value={this.state.tempForm.pName} type='text' label='Name' name='pName' autoComplete='off' color='primary' />
                                             </div>
                                             <div className='form-group' >
-                                                <TextField style={{marginRight:'3px'}} onChange={this.handlePassengerForm} value={this.state.tempForm.age} type='number' label='Passenger Age' name='age' autoComplete='off' color='primary' />
+                                                <TextField style={{marginRight:'3px'}} onChange={this.handlePassengerForm} value={this.state.tempForm.age} type='number' label='Age' name='age' autoComplete='off' color='primary' />
                                             </div>
                                             <div className='form-group' >
-                                                <TextField style={{marginRight:'3px'}} onChange={this.handlePassengerForm} value={this.state.tempForm.contact} type='text' label='Contact No.' name='contact' autoComplete='off' color='primary' />
+                                                <TextField style={{marginRight:'3px'}} onChange={this.handlePassengerForm} value={this.state.tempForm.contact} type='text' label='Contact' name='contact' autoComplete='off' color='primary' />
                                             </div>
                                             <div className='form-group' >
                                                 <TextField  onChange={this.handlePassengerForm} name='gender'  label='Gender' select={true} value={this.state.tempForm.gender} style={{ width: '25ch' }}>
@@ -274,21 +274,21 @@ class Booking extends React.Component{
                             {this.state.passengers.map((obj,i)=>{
                                 return(
 
-                                    <div key={obj.name} className='card' style={{ padding: '20px', marginTop: '15px', width: '100%', backgroundColor: 'rgba(255,255,250,0.7)', borderRadius: 25 }}>
+                                    <div key={obj.name} className='card responsive-text' style={{ padding: '20px', marginTop: '15px',marginBottom:'15px', width: '100%', backgroundColor: 'rgba(255,255,250,0.7)', borderRadius: 25 }}>
                                         <p style={{ fontSize: '17px' }} className='text-center'>Passenger {obj.passengerNo}</p>
                                         <form style={{ display: 'flex', flexDirection: 'row' }}>
                                             <div className='form-group' style={{ margin: '5px' }}>
-                                                <TextField id={obj.passengerNo} onChange={(e)=>this.reEditPassengerForm(e,i)} value={this.state.passengers[i].pName} type='text' label='Name' name='pName' autoComplete='off' color='primary' required/>
+                                                <TextField id={obj.passengerNo} onChange={(e)=>this.reEditPassengerForm(e,i)} value={this.state.passengers[i].pName} type='text' label='Name' name='pName' autoComplete='off' color='primary' />
                                             </div>
                                             <div className='form-group' style={{ margin: '5px', }}>
-                                                <TextField id={obj.passengerNo} onChange={(e)=>this.reEditPassengerForm(e,i)} value={this.state.passengers[i].age} type='number' label='Passenger Age' name='age' autoComplete='off' color='primary' required/>
+                                                <TextField id={obj.passengerNo} onChange={(e)=>this.reEditPassengerForm(e,i)} value={this.state.passengers[i].age} type='number' label='Age' name='age' autoComplete='off' color='primary' />
                                             </div>
                                             <div className='form-group' style={{ margin: '5px', }}>
-                                                <TextField id={obj.passengerNo} onChange={(e)=>this.reEditPassengerForm(e,i)} value={this.state.passengers[i].contact} type='text' label='Contact No.' name='contact' autoComplete='off' color='primary' required />
+                                                <TextField id={obj.passengerNo} onChange={(e)=>this.reEditPassengerForm(e,i)} value={this.state.passengers[i].contact} type='text' label='Phone' name='contact' autoComplete='off' color='primary'  />
                                             </div>
                                             <div className='form-group' style={{ margin: '5px', }}>
                                                 <FormControl>
-                                                    <TextField id={obj.passengerNo} onChange={(e)=>this.reEditGender(e,obj.passengerNo)} name='gender' label='Gender' select={true} value={this.state.passengers[i].gender} style={{ width: '25ch' }} required>
+                                                    <TextField id={obj.passengerNo} onChange={(e)=>this.reEditGender(e,obj.passengerNo)} name='gender' label='Gender' select={true} value={this.state.passengers[i].gender} style={{ width: '25ch' }}>
                                                         <MenuItem value='Male'>Male</MenuItem>
                                                         <MenuItem value='Female'>Female</MenuItem>
                                                         <MenuItem value='Others'>Others</MenuItem>
@@ -310,7 +310,7 @@ class Booking extends React.Component{
 
                         </div>
                         <div className='col-md-4'>
-                            <div className='card' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%',  marginBottom: 15, borderRadius: 25 }}>
+                            <div className='card responsive-text' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%',  marginBottom: 15, borderRadius: 25 }}>
                                 <h4 className='display-4 text-center'>Select Seats</h4>
                                 <div className='card-body'>
 
@@ -333,7 +333,7 @@ class Booking extends React.Component{
                                 </div>
                             </div>
 
-                            <div className='card' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 20, borderRadius: 25 }}>
+                            <div className='card responsive-text' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 20, borderRadius: 25 }}>
                                 <h4 className='display-4 text-center'>Bill Amount</h4>
                                 {this.state.errMsg?<p style={{textAlign:'center',color:'red'}}>{this.state.errMsg}</p>:''}
                                 <div className='card-body'>

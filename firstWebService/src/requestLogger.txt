@@ -912,3 +912,12 @@ Tue Jun 23 2020 GET /getBookings/101
 Tue Jun 23 2020 POST /getTravelsByLocationAndDate
 Tue Jun 23 2020 PUT /addBookings/101
 Tue Jun 23 2020 GET /getBookings/101
+Tue Jun 23 2020 GET /getBookings/101
+Tue Jun 23 2020 GET /getBookings/101
+Tue Jun 23 2020 GET /getBookings/101
+Tue Jun 23 2020 GET /getBookings/101
+Tue Jun 23 2020 GET /getBookings/101
+Tue Jun 23 2020 GET /getBookings/101
+Tue Jun 23 2020 POST /getTravelsByLocationAndDate
+Tue Jun 23 2020 PUT /addBookings/101
+Tue Jun 23 2020 GET /getBookings/101

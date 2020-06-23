@@ -30,7 +30,7 @@ class BusDetails extends React.Component{
                 row1.push(
                     <div style={{margin:'7px',width:'15px',height:'15px'
                     ,backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                    // onClick={()=>this.onSeatSelection(this.state.seats[i])}
+    
                     >
 
                     </div>
@@ -40,7 +40,7 @@ class BusDetails extends React.Component{
                 row2.push(
                     <div style={{margin:'7px',width:'15px',height:'15px',
                                 backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                        //  onClick={()=>this.onSeatSelection(this.state.seats[i])}
+                        
                                 >
 
                     </div>
@@ -50,7 +50,7 @@ class BusDetails extends React.Component{
                 row3.push(
                     <div style={{margin:'7px',width:'15px',height:'15px',
                     backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                    // onClick={()=>this.onSeatSelection(this.state.seats[i])}
+                   
                     >
 
                     </div>
@@ -60,7 +60,7 @@ class BusDetails extends React.Component{
                 row4.push(
                     <div style={{margin:'7px',width:'15px',height:'15px',
                     backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                    // onClick={()=>this.onSeatSelection(this.state.seats[i])}
+                   
                     >
 
                     </div>

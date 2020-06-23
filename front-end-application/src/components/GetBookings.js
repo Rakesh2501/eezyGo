@@ -50,7 +50,7 @@ class GetBookings extends React.Component{
                         <div className='col-md-12'>
                         {this.state.bookings.length>0?this.state.bookings.map((booking,i)=>{
                             return(
-                                <div className='card' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 15, borderRadius: 25 }}>
+                                <div className='card responsive-text' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 15, borderRadius: 25 }}>
                                     <div style={{textAlign:'center',paddingTop:'1%'}}>
                                         <p >Booking Id : {booking.bId}</p>
                                     </div>

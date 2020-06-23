@@ -67,28 +67,28 @@ class Billing extends React.Component{
 
         for(let i=0;i<this.state.details.passengers.length;i++){
             passengerDetails.push(
-                <div className='card' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', margin: 15, borderRadius: 25 }}>
+                <div className='card responsive-text' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginTop: 15,marginBottom:15, borderRadius: 25 }}>
                 <div className='card-body'>
                     
-                    <div className='text-center' style={{fontSize:'20px'}}>
+                    <div className='text-center' style={{}}>
                         <p>Passenger {i+1}</p>
                     </div>
                  
                     <div style={{ display: 'flex', flexDirection: 'row', borderBottom: '1px solid gray',borderTop:'1px solid gray', padding: '10px',marginBottom:'3px'}}>
                         <div style={{ width: '25%', textAlign: 'center' }}>
-                            <p style={{ fontSize: '20px' }}>Name</p>
+                            <p style={{ }}>Name</p>
                             <p>{this.state.details.passengers[i].pName}</p>
                         </div>
                         <div style={{ width: '25%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                            <p style={{ fontSize: '20px' }}>Age</p>
+                            <p style={{}}>Age</p>
                             <p>{this.state.details.passengers[i].age}</p>
                         </div>
                         <div style={{ width: '25%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                            <p style={{ fontSize: '20px' }}>Contact</p>
+                            <p style={{  }}>Contact</p>
                             <p>{this.state.details.passengers[i].contact}</p>
                         </div>
                         <div style={{ width: '25%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                            <p style={{ fontSize: '20px' }}>Gender</p>
+                            <p style={{ }}>Gender</p>
                             <p>{this.state.details.passengers[i].gender}</p>
                         </div>
 
@@ -103,65 +103,65 @@ class Billing extends React.Component{
                 <div className='container' style={{marginTop:'20px'}}>
                     <div className='row'>
                         <div className='col-md-12'>
-                            <div className='card' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 15, borderRadius: 25 }}>
+                            <div className='card responsive-text' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%', marginBottom: 15, borderRadius: 25 }}>
                                 <h4 className='display-4 text-center'>Billing Details</h4>
                                 <div className='card-body'>
                                     <div style={{ display: 'flex', flexDirection: 'row', borderBottom: '1px solid gray', padding: '10px',marginBottom:'3px'}}>
                                         <div style={{ width: '20%', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Bus</p>
+                                            <p style={{ }}>Bus</p>
                                             <p>{this.state.details.data.travelAgencyName}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Class</p>
+                                            <p style={{}}>Class</p>
                                             <p>{this.state.details.data.class}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Source</p>
+                                            <p style={{ }}>Source</p>
                                             <p>{this.state.details.data.source}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Destination</p>
+                                            <p style={{ }}>Destination</p>
                                             <p>{this.state.details.data.Destination}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Boarding Date</p>
+                                            <p style={{  }}>Date</p>
                                             <p>{this.state.details.data.boardingDate}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Boarding Time</p>
+                                            <p style={{ }}>Time</p>
                                             <p>{this.state.details.data.boardingTime}</p>
                                         </div>
                                     </div>
                                     <div style={{ display: 'flex', flexDirection: 'row', borderBottom: '1px solid gray', padding: '10px',marginBottom:'3px'}}>
                                         <div style={{ width: '20%', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Journey Hours</p>
-                                            <p>{this.state.details.data.journeyHours}</p>
+                                            <p style={{ }}>Journey</p>
+                                            <p>{this.state.details.data.journeyHours} hrs</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Bus No</p>
+                                            <p style={{  }}>Bus No</p>
                                             <p>{this.state.details.data.busNo}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Seat No(s)</p>
+                                            <p style={{  }}>Seat No(s)</p>
                                             {seats}
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Fare</p>
+                                            <p style={{  }}>Fare</p>
                                             <p>	&#8377; {this.state.details.data.fare}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Passengers</p>
+                                            <p style={{ }}>Passengers</p>
                                             <p>{this.state.details.noOfPassengers}</p>
                                         </div>
                                         <div style={{ width: '17%', borderLeft: '1px solid gray', textAlign: 'center' }}>
-                                            <p style={{ fontSize: '20px' }}>Payable</p>
+                                            <p style={{ }}>Payable</p>
                                             <p>{this.state.details.data.fare*this.state.details.noOfPassengers}</p>
                                         </div>
                                     </div>
 
                                     <div style={{ display: 'flex', flexDirection: 'row',marginTop:'5px',justifyContent:'center'}}>
                                         <div style={{marginRight:'5px'}}>
-                                            <Button color="primary" size="small" variant="contained" onClick={this.showPassengers}>Show Passengers Details</Button>
+                                            <Button color="primary" size="small" variant="contained" onClick={this.showPassengers}>Details</Button>
                                         </div>
                                         <div>
                                             <Button color="primary" size="small" variant="contained" onClick={this.onBook}>Book</Button>
