@@ -156,7 +156,7 @@ model.addBooking=(custId,obj)=>{
     return collection.getUsersCollection().then((userColl)=>{
         return model.generateBookingId().then((bId)=>{
             obj.bId = bId
-            console.log(obj);
+            console.log('hi',obj);
             
             return userColl.updateOne({custId:custId},{$push:{bookings:obj}}, { runValidators: true }).then((data)=>{
                 if(data.nModified>0){

@@ -17,18 +17,9 @@ class BusDetails extends React.Component{
         this.props.history.push('/booking',this.state.data)
     }
 
-    onSeatSelection=(seat)=>{
-        console.log(seat);
-        let seatsSelected_ = [...this.state.seatsSelected]
-        seatsSelected_.push(seat)
-        this.setState({seatsSelected:seatsSelected_})
-        console.log('seats selected ',this.state.seatsSelected);
-    
-    }
-
-
     render=()=>{
-
+        console.log(this.state.data);
+        
         let row1=[];
         let row2=[];
         let row3=[];
@@ -39,7 +30,7 @@ class BusDetails extends React.Component{
                 row1.push(
                     <div style={{margin:'7px',width:'15px',height:'15px'
                     ,backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                    onClick={()=>this.onSeatSelection(this.state.seats[i])}
+                    // onClick={()=>this.onSeatSelection(this.state.seats[i])}
                     >
 
                     </div>
@@ -49,7 +40,7 @@ class BusDetails extends React.Component{
                 row2.push(
                     <div style={{margin:'7px',width:'15px',height:'15px',
                                 backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                         onClick={()=>this.onSeatSelection(this.state.seats[i])}
+                        //  onClick={()=>this.onSeatSelection(this.state.seats[i])}
                                 >
 
                     </div>
@@ -59,7 +50,7 @@ class BusDetails extends React.Component{
                 row3.push(
                     <div style={{margin:'7px',width:'15px',height:'15px',
                     backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                    onClick={()=>this.onSeatSelection(this.state.seats[i])}
+                    // onClick={()=>this.onSeatSelection(this.state.seats[i])}
                     >
 
                     </div>
@@ -69,7 +60,8 @@ class BusDetails extends React.Component{
                 row4.push(
                     <div style={{margin:'7px',width:'15px',height:'15px',
                     backgroundColor:this.state.seats[i].availabilityStatus?'black':'gray'}}
-                    onClick={()=>this.onSeatSelection(this.state.seats[i])}>
+                    // onClick={()=>this.onSeatSelection(this.state.seats[i])}
+                    >
 
                     </div>
                 )
@@ -80,7 +72,7 @@ class BusDetails extends React.Component{
             <React.Fragment>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-md-6'>
+                        <div className='col-md-9'>
                             <div className='card' style={{ borderRadius: 30, backgroundColor: 'rgba(255,255,250,0.7)',margin: '5%'}}>
                                 <h3 className='display-4' style={{textAlign:'center'}}>Bus Details</h3>
                                 <div className='card-body'>
@@ -143,22 +135,26 @@ class BusDetails extends React.Component{
                             </div>
                         </div>
                         <div className='col-md-3'>
-                            <div className='card' style={{ borderRadius: 30, backgroundColor: 'rgba(255,255,250,0.7)',margin: '12%'}}>
+                            <div className='card' style={{ backgroundColor: 'rgba(255,255,250,0.7)', width: '100%',marginTop:'15%' , borderRadius: 30 }}>
+                                <h4 className='display-4 text-center'>Chart</h4>
                                 <div className='card-body'>
-                                    <div className='row'>
-                                        <div className='col-md-6'>
-                                            <div className='flex-container' style={{display:'flex', flexDirection:'row'}}>
-                                                <div>{row1}</div>
-                                                <div>{row2}</div>
-                                            </div>
-                                        </div>
-                                        <div className='col-md-6'>
-                                            <div className='flex-container' style={{ display: 'flex', flexDirection: 'row' }}>
-                                                <div>{row3}</div>
-                                                <div>{row4}</div>
-                                            </div>
-                                        </div>
+
+                                    <div className='flex-container' style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
+                                        <div style={{ marginRight: '10px' }}>{row1}</div>
+                                        <div style={{ marginRight: '50px' }}>{row2}</div>
+                                        <div style={{ marginRight: '10px' }}>{row3}</div>
+                                        <div>{row4}</div>
                                     </div>
+                                    <div style={{ display: 'flex', flexDirection: 'row', marginTop: '10px', }}>
+                                        <div style={{ margin: '7px', width: '15px', height: '15px', backgroundColor: 'black' }}>
+                                        </div>
+                                        <p style={{ marginRight: '10px' }}>Available Seats</p>
+
+                                        <div style={{ margin: '7px', width: '15px', height: '15px', backgroundColor: 'gray' }}>
+                                        </div>
+                                        <p>Booked Seats</p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

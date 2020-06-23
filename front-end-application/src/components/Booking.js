@@ -152,6 +152,7 @@ class Booking extends React.Component{
     }
 
     render=()=>{ 
+        console.log(this.state.data);
         
         let row1=[];
         let row2=[];

@@ -11,20 +11,32 @@ class GetBookings extends React.Component{
         super(props)
         this.state={
             bookings:[],
-            isClicked:false
+            isClicked:false,
+            trackClicks:[],
         }
                
     }
 
     componentDidMount=()=>{
+        let {trackClicks} = this.state
         axios.get(url+'getBookings/'+ localStorage.getItem('custId'))
              .then((response)=>{
                 this.setState({bookings:response.data})
              })
+        
+        if(this.state.bookings.length>0){
+            this.state.bookings.map((booking)=>{
+                trackClicks.push(false)
+            })
+        }
+
+        this.setState({trackClicks:trackClicks})
     }
 
-    showDetails=()=>{
-        this.setState({isClicked:!this.state.isClicked})
+    showDetails=(index)=>{
+        let {trackClicks} = this.state
+        trackClicks[index] = !this.state.trackClicks[index]
+        this.setState({trackClicks:trackClicks})
     }
 
     render(){
@@ -70,7 +82,7 @@ class GetBookings extends React.Component{
                                             </div>
                                         </div>
 
-                                        {this.state.isClicked?
+                                        {this.state.trackClicks[i]?
                                             <div style={{ display: 'flex', flexDirection: 'column',marginTop:'1%' }}>
                                                 <p style={{ textAlign: 'center' }}>Passenger Details</p>
                                                 {booking.passengerDetails.map((passenger) => {
@@ -94,7 +106,7 @@ class GetBookings extends React.Component{
                                         }
                                         
                                         <div style={{textAlign:'center',marginTop:'1%'}}>
-                                            <Button color='primary' size='small' variant='contained' onClick={this.showDetails}>{this.state.isClicked?'Hide Details':'Show Details'}</Button>
+                                            <Button color='primary' size='small' variant='contained' onClick={()=>this.showDetails(i)}>{this.state.trackClicks[i]?'Hide Details':'Show Details'}</Button>
                                         </div>
                                     </div>
                                 </div>

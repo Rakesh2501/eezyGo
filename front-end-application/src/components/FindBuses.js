@@ -2,6 +2,7 @@ import React from 'react'
 import {BrowserRouter,Link,Route,Redirect} from 'react-router-dom'
 import axios from 'axios'
 import {TextField,Button} from '@material-ui/core'
+import {FaArrowRight} from 'react-icons/fa'
 
 class FindBuses extends React.Component{
     constructor(props){
@@ -27,15 +28,15 @@ class FindBuses extends React.Component{
                 <div className='container-fluid'>
                     <div className='row'>
                         <div style={{width:'100%',height:50,backgroundColor:'rgba(255,255,250,0.5)',marginTop:5}}>
-                            <p>fghj</p>
+                            <p style={{textAlign:'center',paddingTop:'1%'}}>{this.props.history.location.state[0].source} &nbsp; <FaArrowRight/> &nbsp; {this.props.history.location.state[0].Destination}</p>
                         </div>
-                        <div className='col-sm-3' style={{marginLeft:-40}}>
-                            {/* <div className='card' style={{position:'fixed',height:'100%',width:'20%',backgroundColor:'rgba(255,255,250,0.5)'}}>
+                        {/* <div className='col-sm-3' style={{marginLeft:'-1%'}}>
+                            <div className='card' style={{height:'100%',width:'80%',backgroundColor:'rgba(255,255,250,0.5)'}}>
                                 <p>fghj</p>
-                            </div> */}
-                        </div>
+                            </div>
+                        </div> */}
 
-                        <div className='col-sm-9' style={{marginTop:'3%'}}>
+                        <div className='offset-sm-2 col-sm-8' style={{marginTop:'3%'}}>
                             {this.props.history.location.state.map((obj)=>{
                                 return(
                                     <div className='card ' style={{  padding: 10, backgroundColor: 'rgba(255,255,250,0.7)', height: 150, marginBottom: 20, borderRadius: 30 }}>

@@ -93,16 +93,16 @@ class Home extends React.Component{
 
                 <div className='container'>
                     <div className='row'>
-                        <div className='card' style={{ borderRadius:40,width: '100%', height: 75, backgroundColor: 'rgba(255,255,250,0.7)' }}>
+                        <div className='card' style={{ borderRadius:40,width: '100%',  backgroundColor: 'rgba(255,255,250,0.7)' }}>
                             <div className='col-sm-12 text-center'>
                                 <h3 className='display-4'>Why travel with eezyGo?</h3>
                             </div>
                         </div>
                     </div>
-                    <div className='row' style={{  marginTop: 35, height: 250 }}>
+                    <div className='row text-center' style={{  marginTop: 35, height: 250 }}>
                         <div className='col-sm-3' style={{marginBottom:10}} >
                             <div className='card' style={{ borderRadius:25,height: '85%',backgroundColor:'rgba(255,255,250,0.7)' }}>
-                                <img className='card-img-top' style={{ borderTopRightRadius:25,borderTopLeftRadius:25,opacity:1 }} height={'60%'} src={require('../img/tick2.jpg')} />
+                                <img className='card-img-top' style={{ borderTopRightRadius:25,borderTopLeftRadius:25,opacity:1 }} height={'60%'} src={require('../img/insurance1.jpg')} />
                                 <div className='card-body'>
                                     <p className='card-content' style={{fontSize:25}}>Health Insurance Cover</p>
                                 </div>
@@ -110,7 +110,7 @@ class Home extends React.Component{
                         </div>
                         <div className='col-sm-3' style={{marginBottom:10}}>
                             <div className='card' style={{ borderRadius:30,height: '85%' ,backgroundColor:'rgba(255,255,250,0.7)'}}>
-                                <img className='card-img-top' style={{borderTopRightRadius:30,borderTopLeftRadius:30, opacity: 1 }} height={'60%'} src={require('../img/tick2.jpg')} />
+                                <img className='card-img-top' style={{borderTopRightRadius:30,borderTopLeftRadius:30, opacity: 1 }} height={'60%'} src={require('../img/time.jpg')} />
                                 <div className='card-body'>
                                     <p className='card-content' style={{fontSize:25}}>Bus On Time</p>
                                 </div>
@@ -118,7 +118,7 @@ class Home extends React.Component{
                         </div>
                         <div className='col-sm-3' style={{marginBottom:10}}>
                             <div className='card' style={{borderRadius:30,height: '85%' ,backgroundColor:'rgba(255,255,250,0.7)'}}>
-                                <img className='card-img-top' style={{borderTopRightRadius:30,borderTopLeftRadius:30, opacity: 1 }} height={'60%'} src={require('../img/tick2.jpg')} />
+                                <img className='card-img-top' style={{borderTopRightRadius:30,borderTopLeftRadius:30, opacity: 1 }} height={'60%'} src={require('../img/customer_service1.jpg')} />
                                 <div className='card-body'>
                                     <p className='card-content' style={{fontSize:25}}>24/7 Customer Support</p>
                                 </div>
@@ -126,7 +126,7 @@ class Home extends React.Component{
                         </div>
                         <div className='col-sm-3' style={{marginBottom:10}}>
                             <div className='card' style={{ borderRadius:30,height: '85%' ,backgroundColor:'rgba(255,255,250,0.7)'}}>
-                                <img className='card-img-top' style={{ borderTopRightRadius:30,borderTopLeftRadius:30,opacity: 1 }} height={'60%'} src={require('../img/tick2.jpg')} />
+                                <img className='card-img-top' style={{ borderTopRightRadius:30,borderTopLeftRadius:30,opacity: 1 }} height={'60%'} src={require('../img/hygiene3.jpg')} />
                                 <div className='card-body'>
                                     <p className='card-content' style={{fontSize:25}}>Hygienic</p>
                                 </div>
@@ -135,7 +135,7 @@ class Home extends React.Component{
 
                         <div className='col-sm-3 offset-3' style={{marginBottom:10}}>
                             <div className='card' style={{borderRadius:30, height: '85%', backgroundColor: 'rgba(255,255,250,0.7)' }}>
-                                <img className='card-img-top' style={{ borderTopRightRadius: 30, borderTopLeftRadius: 30, opacity: 1 }} height={'60%'} src={require('../img/tick2.jpg')} />
+                                <img className='card-img-top' style={{ borderTopRightRadius: 30, borderTopLeftRadius: 30, opacity: 1 }} height={'60%'} src={require('../img/variety.jpg')} />
                                 <div className='card-body'>
                                     <p className='card-content' style={{fontSize:23}}>Variety Of Choices - bus fares, seats etc.</p>
                                 </div>
@@ -143,7 +143,7 @@ class Home extends React.Component{
                         </div>
                         <div className='col-sm-3 ' style={{marginBottom:10}}>
                             <div className='card' style={{borderRadius:30, height: '85%', backgroundColor: 'rgba(255,255,250,0.7)' }}>
-                                <img className='card-img-top' style={{ borderTopRightRadius: 30, borderTopLeftRadius: 30, opacity: 1 }} height={'60%'} src={require('../img/tick2.jpg')} />
+                                <img className='card-img-top' style={{ borderTopRightRadius: 30, borderTopLeftRadius: 30, opacity: 1 }} height={'60%'} src={require('../img/hassle.png')} />
                                 <div className='card-body'>
                                     <p className='card-content' style={{fontSize:23}}>Hassle free booking</p>
                                 </div>

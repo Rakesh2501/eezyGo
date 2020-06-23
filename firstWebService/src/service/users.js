@@ -56,7 +56,7 @@ service.addBooking=(custId,obj)=>{
             let fare = busDetails.fare
             let totalCost = fare*obj.noOfSeats
 
-            obj.busNo=busDetails.busNo
+            // obj.busNo=busDetails.busNo
             obj.totalCost = totalCost
 
             return dbLayer.addBooking(custId,obj).then((data)=>{
